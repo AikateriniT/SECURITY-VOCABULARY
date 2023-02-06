@@ -29,7 +29,8 @@ DCL
 
 What is SQL injection?
 
-    They are the most common web hacking techniques. An SQL injection attack consists of insertion or "Injection" of malicious code via the SQL query input from the client to the application. 
+    They are the most common web hacking techniques. An SQL injection attack consists of insertion or "Injection" of malicious code 
+    via the SQL query input from the client to the application. 
     
 Example of SQL injection: 
 
@@ -38,6 +39,7 @@ Example of SQL injection:
         
         The variable userName holds the input from the client and injects it into the query.
         If the input would be Smith the query then looks like:
+        
         "SELECT * FROM users WHERE name = 'Smith'";
         And would retrieve all data from the user with the name Smith.
 
