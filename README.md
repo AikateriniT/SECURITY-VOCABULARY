@@ -26,3 +26,19 @@ DCL
     Data control language, is used to create priviledges to allow users to access and manipulate a database. By SQL injection 
     which uses DCL type, the perpetrator violates the confidentiality (grant) and the availability (revoke)(Unwanted people could 
     grand themselves admin priviledges or revoke the admin rights from an administrator.)
+
+What is SQL injection?
+
+    They are the most common web hacking techniques. An SQL injection attack consists of insertion or "Injection" of malicious code via the SQL query input from the client to the application. 
+    
+Example of SQL injection: 
+
+        "SELECT * FROM users WHERE name ='" + userName + "'";
+        This is the SQL query to retrieve the user information from the database.
+        
+        The variable userName holds the input from the client and injects it into the query.
+        If the input would be Smith the query then looks like:
+        "SELECT * FROM users WHERE name = 'Smith'";
+        And would retrieve all data from the user with the name Smith.
+
+    
