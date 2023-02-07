@@ -138,6 +138,46 @@ SPECIAL STATEMENTS
             The join operator is used to combine rows from two or more tables, based on a related column
             SELECT * FROM user_data INNER JOIN user_data_tan ON user_data.userid=user_data_tan.userid;
             
-          
+BLIND SQL INJECTION 
+
+It is a type of SQL injection attack that asks the database true or false questions and determines the answer based on the applications response. This attack is often used when the web application is configured to show generic error messages, but has not mitigated the code that is vulnerable to SQL injection.
+
+DIFFERENCE
+
+the differences between the normal SQL injection and the blind SQL injection are:
+
+        - At the normal SQL injection the errors messages from the databases are displayed and gives enough 
+        information to find out how the query is working. 
+        - In the case of UNION based SQL injection the application does not reflect the information directly 
+        on the webpage. So in the case where nothing is displayed you will need to start asking the database 
+        questions based on a true or false statement.
+        
+        That is why a blind SQL injection is more difficult to exploit. 
+        
+EXAMPLE:
+
+In this case we are trying to ask the database a boolean question based on for example a unique id, for example suppose we have the following url: https://my-shop.com?article=4 
+On the server side the query will be translated as:
+
+        SELECT * FROM articles WHERE article_id = 4 
+        
+When we want to exploit this we change the url into:
+https://shop.example.com?article=4and1=1
+        
+        SELECT * FROM articles WHERE erticle_id = 4 and 1 = 1
+        
+If the browser returns the same page as it used to when using https://my-shop.com?article=4 then we are sure that the website is vulnerable for a blind SQL injection. 
+
+If the browser returns with a 'Page not found' or something else then the website is not susceptible to blind SQL injection.  
+
+
+        
+         
+         
+         
+         
+         
+         
+         
          
          
