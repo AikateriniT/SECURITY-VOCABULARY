@@ -110,11 +110,10 @@ CONSEQUENCES OF SQL INJECTION
     - Comamand shell: master.dbo.xp_cmdshell 'cmd.exe dir c:'
     - Registry commands: xp_regread, xp_regdeletekey, ...
     
-Special characters for SQL injection
+SPECIAL CHARACTERS FOR SQL INJECTION
 
     /* */ are inline comments
     -- , # are line comments
-    
     Example: SELECT * FROM users WHERE name = 'admin' --AND pass = 'pass'
 
     ; allows query chaining
@@ -124,4 +123,21 @@ Special characters for SQL injection
     Char()     strings without quotes
     Example: SELECT * FROM users WHERE name = '+ char(27) OR 1=1
     
-    
+
+SPECIAL STATEMENTS
+
+         UNION 
+            The union operator is used, to combine the results of two or more SELECT statements.
+            Rules to keep in mind:
+                - The number of columns selected in each statement must be the same.
+                - The datatype of the first column in the first SELECT statement, must catch the datatype of the 
+            first column in the second(third, fourth..) SELECT stetement. The same applies to all other columns. 
+            SELECT first_name FROM user_system_data UNION SELECT login_count FROM user_data;
+         
+         JOINS
+            The join operator is used to combine rows from two or more tables, based on a related column
+            SELECT * FROM user_data INNER JOIN user_data_tan ON user_data.userid=user_data_tan.userid;
+            
+          
+         
+         
