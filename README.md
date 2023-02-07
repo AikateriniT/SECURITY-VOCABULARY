@@ -110,3 +110,18 @@ CONSEQUENCES OF SQL INJECTION
     - Comamand shell: master.dbo.xp_cmdshell 'cmd.exe dir c:'
     - Registry commands: xp_regread, xp_regdeletekey, ...
     
+Special characters for SQL injection
+
+    /* */ are inline comments
+    -- , # are line comments
+    
+    Example: SELECT * FROM users WHERE name = 'admin' --AND pass = 'pass'
+
+    ; allows query chaining
+    Example: SELECT * FROM users; DROP TABLE users;
+    
+    ' , + , || allows string concatenation 
+    Char()     strings without quotes
+    Example: SELECT * FROM users WHERE name = '+ char(27) OR 1=1
+    
+    
