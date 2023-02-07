@@ -170,6 +170,14 @@ If the browser returns the same page as it used to when using https://my-shop.co
 
 If the browser returns with a 'Page not found' or something else then the website is not susceptible to blind SQL injection.  
 
+BRUTE FORCE
+
+A brute-force attack is an attempt to discover a password by systematically trying every possible combination of letters, numbers, and symbols until you discover the one correct combination that works. If your web site requires user authentication, you are a good target for a brute-force attack.
+
+HYDRA
+
+Hydra is a brute-forcing tool that helps penetration testers and ethical hackers crack the passwords of network services. Hydra can perform rapid dictionary attacks against more than 50 protocols. This includes telnet, FTP, HTTP, HTTPS, SMB, databases, and several other services.
+
 
         
          
