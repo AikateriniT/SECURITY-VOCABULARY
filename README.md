@@ -180,16 +180,41 @@ Hydra is a brute-forcing tool that helps penetration testers and ethical hackers
 
 PACKET SNIFFER
 
-A packet sniffer — also known as a packet analyzer, protocol analyzer or network analyzer — is a piece of hardware or software used to monitor network traffic. Sniffers work by examining streams of data packets that flow between computers on a network as well as between networked computers and the larger Internet. These packets are intended for — and addressed to — specific machines, but using a packet sniffer in "promiscuous mode" allows IT professionals, end users or malicious intruders to examine any packet, regardless of destination.
+    A packet sniffer — also known as a packet analyzer, protocol analyzer or network analyzer — 
+    is a piece of hardware or software used to monitor network traffic. Sniffers work by examining 
+    streams of data packets that flow between computers on a network as well as between networked 
+    computers and the larger Internet. These packets are intended for — and addressed to — specific 
+    machines, but using a packet sniffer in "promiscuous mode" allows IT professionals, end users 
+    or malicious intruders to examine any packet, regardless of destination.
 
-It's worth noting, however, that these analyzers can also be used for malicious purposes. If a user is convinced to download malware-laden email attachments or infected files from a website, it's possible for an unauthorized packet sniffer to be installed on a corporate network. Once in place, the packet sniffer can record any data transmitted and send it to a command and control (C&C) server for further analysis. It's then possible for hackers to attempt packet injection or man-in-the-middle attacks, along with compromising any data that was not encrypted before being sent.
-Proper use of packet sniffers can help clean up network traffic and limit malware infections; to protect against malicious use, however, intelligent security software is required.
+    It's worth noting, however, that these analyzers can also be used for malicious purposes. If a 
+    user is convinced to download malware-laden email attachments or infected files from a website, 
+    it's possible for an unauthorized packet sniffer to be installed on a corporate network. Once in 
+    place, the packet sniffer can record any data transmitted and send it to a command and control 
+    (C&C) server for further analysis. It's then possible for hackers to attempt packet injection or 
+    man-in-the-middle attacks, along with compromising any data that was not encrypted before being 
+    ent.
+    Proper use of packet sniffers can help clean up network traffic and limit malware infections; to 
+    protect against malicious use, however, intelligent security software is required.
+
+WHAT IS MAN-IN-THE-MIDDLE ATTACK?
+
+    A man-in-the-middle attack (MITM) is defined as an attack that intercepts communication between 
+    two parties with the aim of gathering or altering data for disruption or financial gain. 
+
+Linux errors:
+
+[0.325826] RETBleed : Warning: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!
+[2.555003] [drm:vmw_host_log [vmwfx1]] ERROR Failed to send host log message.
 
 
 Sources
 -------------------------------------------------------------------------------------------------------
 
-https://www.kaspersky.com/resource-center/definitions/what-is-a-packet-sniffer
+        https://www.kaspersky.com/resource-center/definitions/what-is-a-packet-sniffer
+        https://www.spiceworks.com/it-security/network-security/articles/what-is-packet-sniffing/
+
+
 
 
         
