@@ -207,6 +207,9 @@ Linux errors:
 [0.325826] RETBleed : Warning: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!
 [2.555003] [drm:vmw_host_log [vmwfx1]] ERROR Failed to send host log message.
 
+HASH ENCRYPTION
+
+
 
 Sources
 -------------------------------------------------------------------------------------------------------
