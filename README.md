@@ -209,6 +209,13 @@ Linux errors:
 
 HASH ENCRYPTION
 
+        PASSWORD SPRAYING
+
+Password spraying is a cyber attack where the hacker attempts to access various accounts simultaneously by using commonly used passwords. The consequences of a successful password spraying attack can be catastrophic. For companies, it can translate into the exposure of confidential data that may damage the organization's reputation and lead to extensive financial losses. For individuals, hackers may get access to credit card details, legal documents, and anything else you can imagine.
+
+        AES-256 encryption
+
+
 
 
 Sources
